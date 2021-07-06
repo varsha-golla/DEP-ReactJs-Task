@@ -1,0 +1,284 @@
+:root {
+  --primary-color: #f65261;
+  --search-movie-height: 50%;
+  --movie-page-height: 65%;
+}
+
+html, body, #root, .full-screen{
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+button {
+  border: 0;
+  padding: 8px 15px;
+  border-radius: 0.10rem;
+  color: white;
+}
+
+img {
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+input {
+  border: 0;
+  font-size:20px;
+  color: white;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.header {
+  height: 10%;
+}
+
+.error {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  background-color: #232323;
+  color: red;
+}
+
+.centered-container {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0px 60px;
+}
+
+.app-title {
+  font-size: 22px;
+  color: var(--primary-color);
+}
+
+.big-font {
+  font-size: 40px;
+}
+
+.search-bar {
+  width: 950px;
+  height: 50px;
+  background-color: #343a40;
+  margin: 15px 0px;
+  padding-left: 20px;
+}
+
+.search-icon {
+  color: var(--primary-color);
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+}
+
+.secondary-button {
+  background-color: #424242;
+}
+
+.first-button {
+  margin-left: 10px;
+}
+
+.search-button {
+  height: 50px;
+  width: 180px;
+}
+
+.stack-top {
+  background-color: rgba(0,0,0, 0.8);
+  position: absolute;
+  top:0;
+  z-index: 1;
+  width: 100%;
+}
+
+.page-top-search-movie {
+  padding: 15px 40px;
+  color: white;
+  height: var(--search-movie-height);
+}
+
+.page-top-movie-page {
+  height: var(--movie-page-height);
+  padding: 15px 40px;
+  color: white;
+}
+
+.centered-flex {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.bg-image {
+  background-image: url("netflix.jpg");
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search-movie-bg {
+  height: var(--search-movie-height);
+}
+
+.movie-page-bg {
+  height: var(--movie-page-height);
+}
+
+.page-middle {
+  height: 7%;
+  background-color: #555555;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0px 100px;
+  justify-content: space-between;
+}
+
+.page-bottom {
+  min-height: 46%;
+  max-height: auto;
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-poster {
+  height: 300px;
+  width: 250px;
+}
+
+.footer {
+  height: 7%;
+  width: 100%;
+  background-color: #555555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold-text {
+  font-weight: bolder;
+}
+
+.light-text {
+  font-weight: lighter;
+}
+
+.card {
+  width: 100%;
+  color: white;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.card-movie-poster {
+  width: 100%;
+  height: 420px;
+  margin-bottom: 10px;
+}
+
+.card-movie-title {
+  display: inline-block;
+  margin: 8px 0px;
+  font-size: large;
+  color: #e9ecef;
+}
+
+.card-release-year {
+  float: right;
+  margin: 8px 0px;
+  font-size: large;
+  border: 1px solid #adb5bd;
+  padding: 0px 2px;
+  border-radius: 0.25rem;
+  color: #e9ecef;
+}
+
+.card-genre {
+  font-size: small;
+  color: #adb5bd;
+}
+
+.inline-element {
+  display: inline;
+}
+
+.margin {
+  margin-bottom: 30px;
+}
+
+.movie-data {
+  color: #e9ecef;
+}
+
+.movie-rating {
+  color: #a1e66f;
+  padding: 15px 20px;
+  border-radius: 3rem;
+  border: 1px solid white;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.movie-release-date {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.movie-duration {
+  color: var(--primary-color);
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.movie-description {
+  margin-top: 25px;
+}
+
+.movies-grid-container {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  justify-content: space-between;
+  padding: 40px 40px 15px 40px;
+}
+
+.no-films-found {
+  font-size: 50px;
+  color: #e9ecef;
+}
+
